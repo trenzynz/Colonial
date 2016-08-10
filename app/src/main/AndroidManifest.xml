@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aneel.trenz.colonial">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.software.leanback"
+        android:required="false" />
+
+    <!-- touchscreen must be failed  -->
+    <uses-feature android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <application
+        android:banner="@drawable/banner">
+
+        <activity android:name="com.aneel.trenz.colonial.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Leanback">
+
+            <!-- LEANBACK_LAUNCHER must be declared to make your
+                app visible on TV Launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
